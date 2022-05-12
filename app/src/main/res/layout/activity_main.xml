@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:textSize="40pt"
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:gravity="right|center"
+        android:layout_weight="1"
+        android:text="0" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:textSize="10pt"
+                android:id="@+id/buC"
+                android:text="C"
+                android:height="30pt"
+                android:width="30pt"
+                android:layout_weight="1"
+                android:layout_marginRight="1pt"
+                android:backgroundTint="@color/blue"/>
+
+            <Button
+                android:textSize="10pt"
+                android:id="@+id/buPlusMinus"
+                android:text="+/-"
+                android:height="30pt"
+                android:width="30pt"
+                android:layout_weight="1"
+                android:layout_marginRight="1pt"
+                android:backgroundTint="@color/blue"/>
+
+            <Button
+                android:textSize="10pt"
+                android:id="@+id/buDevide"
+                android:text="/"
+                android:height="30pt"
+                android:width="30pt"
+                android:layout_weight="1"
+                android:layout_marginRight="1pt"
+                android:backgroundTint="@color/blue"/>
+
+            <Button
+                android:textSize="10pt"
+                android:id="@+id/buMultiplu"
+                android:text="*"
+                android:height="30pt"
+                android:width="30pt"
+                android:layout_weight="1"
+                android:layout_marginRight="1pt"
+                android:backgroundTint="@color/blue"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:textSize="10pt"
+                android:id="@+id/bu7"
+                android:text="7"
+                android:height="30pt"
+                android:width="30pt"
+                android:layout_weight="1"
+                android:layout_marginRight="1pt"
+                android:backgroundTint="@color/blue"/>
+
+            <Button
+                android:textSize="10pt"
+                android:id="@+id/bu8"
+                android:text="8"
+                android:height="30pt"
+                android:width="30pt"
+                android:layout_weight="1"
+                android:layout_marginRight="1pt"
+                android:backgroundTint="@color/blue"/>
+
+            <Button
+                android:textSize="10pt"
+                android:id="@+id/bu9"
+                android:text="9"
+                android:height="30pt"
+                android:width="30pt"
+                android:layout_weight="1"
+                android:layout_marginRight="1pt"
+                android:backgroundTint="@color/blue"/>
+
+            <Button
+                android:textSize="10pt"
+                android:id="@+id/buPersend"
+                android:text="%"
+                android:height="30pt"
+                android:width="30pt"
+                android:layout_weight="1"
+                android:layout_marginRight="1pt"
+                android:backgroundTint="@color/blue"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:textSize="10pt"
+                android:id="@+id/bu4"
+                android:text="4"
+                android:height="30pt"
+                android:width="30pt"
+                android:layout_weight="1"
+                android:layout_marginRight="1pt"
+                android:backgroundTint="@color/blue"/>
+
+            <Button
+                android:textSize="10pt"
+                android:id="@+id/bu5"
+                android:text="5"
+                android:height="30pt"
+                android:width="30pt"
+                android:layout_weight="1"
+                android:layout_marginRight="1pt"
+                android:backgroundTint="@color/blue"/>
+
+            <Button
+                android:textSize="10pt"
+                android:id="@+id/bu6"
+                android:text="6"
+                android:height="30pt"
+                android:width="30pt"
+                android:layout_weight="1"
+                android:layout_marginRight="1pt"
+                android:backgroundTint="@color/blue"/>
+
+            <Button
+                android:textSize="10pt"
+                android:id="@+id/buPlus"
+                android:text="+"
+                android:height="30pt"
+                android:width="30pt"
+                android:layout_weight="1"
+                android:layout_marginRight="1pt"
+                android:backgroundTint="@color/blue"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:textSize="10pt"
+                android:id="@+id/bu1"
+                android:text="1"
+                android:height="30pt"
+                android:width="30pt"
+                android:layout_weight="1"
+                android:layout_marginRight="1pt"
+                android:backgroundTint="@color/blue"/>
+
+            <Button
+                android:textSize="10pt"
+                android:id="@+id/bu2"
+                android:text="2"
+                android:height="30pt"
+                android:width="30pt"
+                android:layout_weight="1"
+                android:layout_marginRight="1pt"
+                android:backgroundTint="@color/blue"/>
+
+            <Button
+                android:textSize="10pt"
+                android:id="@+id/bu3"
+                android:text="3"
+                android:height="30pt"
+                android:width="30pt"
+                android:layout_weight="1"
+                android:layout_marginRight="1pt"
+                android:backgroundTint="@color/blue"/>
+
+            <Button
+                android:textSize="10pt"
+                android:id="@+id/buMinus"
+                android:text="-"
+                android:height="30pt"
+                android:width="30pt"
+                android:layout_weight="1"
+                android:layout_marginRight="1pt"
+                android:backgroundTint="@color/blue"/>
+
+        </TableRow>
+    </TableLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Button
+                    android:textSize="10pt"
+                    android:id="@+id/bu0"
+                    android:text="0"
+                    android:height="30pt"
+                    android:width="30pt"
+                    android:layout_weight="2"
+                    android:layout_marginRight="1pt"
+                    android:backgroundTint="@color/blue"/>
+
+                <Button
+                    android:textSize="10pt"
+                    android:id="@+id/buDot"
+                    android:text="."
+                    android:height="30pt"
+                    android:width="30pt"
+                    android:layout_weight="3"
+                    android:layout_marginRight="1pt"
+                    android:backgroundTint="@color/blue"/>
+
+                <Button
+                    android:textSize="10pt"
+                    android:id="@+id/buEquals"
+                    android:text="="
+                    android:height="30pt"
+                    android:width="30pt"
+                    android:layout_weight="3"
+                    android:layout_marginRight="1pt"
+                    android:backgroundTint="@color/blue"/>
+
+            </TableRow>
+         </LinearLayout>
+
+</LinearLayout>
