@@ -40,11 +40,20 @@ public class MainActivity extends AppCompatActivity {
             case R.id.bu9: number = number + "9"; break;
             case R.id.bu0: number = number + "0"; break;
             case R.id.buPlusMinus:
-                if(plusMinusIsPresent(number)){
-                    number = number.substring(1);
-                } else{
-                    number = "-" + number;
+                //если изначально number == ""
+                if(numberIsNull(number)){
+                    number = "-";
+                }else{
+                    //если в начале '-', то number запишется без первого символа,
+                    //substring возьмет наш "-" как первое значание и запишет строку после первого символа
+                    // иначе добавится символ '-', а после него присоединится number
+                    if(plusMinusIsPresent(number)){
+                        number = number.substring(1);
+                    } else{
+                        number = "-" + number;
+                    }
                 }
+
                 break;
 
             case R.id.buDot:
@@ -60,7 +69,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
     public void operation(View view) {
         zeroIsNew = true;
         oldNum = editText.getText().toString();
@@ -72,8 +80,6 @@ public class MainActivity extends AppCompatActivity {
         }
         editText.setText(oldNum + operation);
     }
-
-
 
     public void clickEqual(View view) {
         String newNumber = editText.getText().toString();
@@ -112,13 +118,15 @@ public class MainActivity extends AppCompatActivity {
 
         }
     }
+    private boolean numberIsNull(String number) {
+        return (number.equals(""));
+    }
     private boolean plusMinusIsPresent(String number) {
         if(number.charAt(0) == '-'){
             return true;
         }else {
             return false;
         }
-
     }
 
     //проверка на то была ли введена точка. Если да, то повторно её ввести нельзя.
